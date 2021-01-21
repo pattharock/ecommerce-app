@@ -1,5 +1,5 @@
 import { triggerAsyncId } from 'async_hooks';
-import mongoose, { Mongoose } from 'mongoose';
+import mongoose from 'mongoose';
 
 const orderScehma = mongoose.Schema({
   user: {
@@ -103,6 +103,6 @@ const orderScehma = mongoose.Schema({
 });
 
 
-const Order = mongoose.Model('Order', orderScehma);
+const Order = mongoose.model('Order', orderScehma);
 
 export default Order;
